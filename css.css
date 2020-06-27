@@ -2,6 +2,24 @@ html,
 h1{
     color: pink;
     font-size: 60px;
+    width: 170px;
+    height: 100px;
+    transition: color 1s, transform .4s, font-size 1s;
+}
+h1:hover{
+    color: orange;
+    font-size: 100px;
+    transform: rotateY(360deg)
+}
+img{
+    transition: width .5s, height .5s;
+    transition-timing-function: ease-out;
+    width: 5em;
+    height: auto;
+}
+img:hover{
+    width: 6em;
+    height: auto;
 }
 body.main{
     background-color: gray;
@@ -16,5 +34,15 @@ p.regular{
 }
 iframe{
     width: 480px;
-    height: 380px;
+    height: 384px;
+    border-style: none;
+}
+div.name{
+    color: oldlace;
+    transition: color .5s, font-size .5s;
+    transition-timing-function: ease-out;
+}
+div.name:hover{
+    color: orange;
+    font-size: 70px
 }
