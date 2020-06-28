@@ -8,6 +8,10 @@ h1{
     color: pink;
     transition: color 1s, transform .4s, font-size 1s;
     font-size: 60px;
+    width: 200px;
+    height: 101px; 
+    padding: 0px;
+    margin: 0px;
 }
 h1:hover{
     color: orange;
