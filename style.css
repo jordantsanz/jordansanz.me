@@ -457,6 +457,10 @@ video{
     align-items: self-end;
 }
 
+#java, #python, #css, #javascript, #SQL, #r, #C{
+    font-weight: bold;
+}
+
 
 
 .experience-item{
@@ -495,7 +499,7 @@ video{
     flex-direction: column;
     align-items: center;
     background-color: rgba(5, 28, 44);
-    height: 47em;
+    height: 57em;
     transition: all 2.5s ease;
 }
 
@@ -515,6 +519,11 @@ video{
     align-items: center;
     height: 360px;
 }
+#carosel-container::-webkit-scrollbar{
+    display: none;
+}
+
+
 .carosel-box{
     position: relative;
     display: inline-block;
@@ -534,6 +543,42 @@ video{
     justify-content: center;
 }
 
+.left-arrow-holder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.left-arrow{
+    border: solid #fade0f;
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    padding: 6px;
+    transform: rotate(-45deg);
+    align-items: center;
+    filter: opacity(.6);
+    animation-name: arrowblink;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrowblink{
+    0%{
+        filter: opacity(.6);
+       
+    }
+
+    50%{
+        filter: opacity(1);
+        border: solid #f7df29;
+        border-width: 0 6px 6px 0;
+    }
+    100%{
+        filter: opacity(.6);
+    }
+
+}
 
 .img-box-overlay{ /* received help from a TA on spacing */
     background-color:#fade0f;
@@ -546,7 +591,7 @@ video{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    transition: all 200ms;
+    transition: all 150ms;
     border-radius: 10px;
 }
 .carosel-box:hover .img-box-overlay{
@@ -593,6 +638,10 @@ video{
     background-color: rgba(5, 28, 44);
     height: max-content;
     transition: all 2.5s ease;
+}
+
+#contactme{
+    margin-top: 35px;
 }
 
 .contact-cover:hover{
@@ -662,6 +711,7 @@ video{
     font-family: 'Bungee', cursive;
     color: white;
     border: none;
+    margin-top: 40px;
 }
 
 .button:hover{

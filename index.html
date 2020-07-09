@@ -80,27 +80,30 @@
                     <div class="left-list">
                         <div class="list-title">Languages: </div>
                         <ul class="list-of-languages">
-                        <li class="experience-item" id="java">
-                            - Java
-                        </li>
-                        <li class="experience-item" id="python">
-                            - Python
-                        </li>
-                        <li class="experience-item" id="css">
-                            - JavaScript  
-                        </li>
-                        <li class="experience-item" id="javascript">
-                            - HTML/CSS
-                        </li>
-                        <li class="experience-item" id="r">
-                            - R
-                        </li>
-                        <li class="experience-item" id="C">
-                            - C
-                        </li>
-                        <li class="experience-item" id="SQL">
-                            - SQL
-                        </li>
+                            <li class="experience-item" id="python">
+                                - Python (pandas, matplotlib)
+                            </li>
+
+                            <li class="experience-item" id="r">
+                                - R (ggplot2)
+                            </li>
+                            <li class="experience-item" id="java">
+                                - Java
+                            </li>
+
+                            <li class="experience-item" id="javascript">
+                                - JavaScript  
+                            </li>
+                            <li class="experience-item" id="css">
+                                - HTML/CSS
+                            </li>
+
+                            <li class="experience-item" id="C">
+                                - C
+                            </li>
+                            <li class="experience-item" id="SQL">
+                                - SQL
+                            </li>
                         </ul>
                         <div class="list-title">Coursework:</div>
                         <ul class="list-of-courses">
@@ -169,6 +172,11 @@
                 <div class="portfolio-container">
                     <h1 class="title" id="portfolio">Portfolio</h1>
                     <h2 class="portfolio-subtitle">Here's some stuff I've been working on:</h2>
+                    <div class="left-arrow-holder">
+                        <div class="left-arrow"></div>
+                        <div class="left-arrow"></div>
+                        <div class="left-arrow"></div>
+                    </div>
                     <div class="carosel">
                         <ul id="carosel-container">
                             <li id="carosel-cell-2">
@@ -176,7 +184,6 @@
                                     <img class="img-box" src="images/RankedConfirmedCasesByCountryFinal.gif">
                                     <div class="img-box-overlay">
                                         <div class="img-box-overlay-title">Animated COVID-19 Bar Chart</div>
-                                        <button class="see-more"  onclick="window.location.href='https://github.com/jordantsanz/COVID-19-Data-Visualizations';">See more</button>
                                     </div>
                                 </div>
                             </li>
@@ -185,7 +192,7 @@
                                     <img class="img-box" src="images/CasesOverTimeByCounty.gif">
                                     <div class="img-box-overlay">
                                         <div class="img-box-overlay-title">Dynamic Map of COVID-19</div>
-                                        <button class="see-more"  onclick="window.location.href='https://github.com/jordantsanz/COVID-19-Data-Visualizations';">See more</button>
+
                                     </div>
                                 </div>
                             </li>
@@ -193,8 +200,8 @@
                                 <div class="carosel-box">
                                     <img class="img-box" src="images/coverpage-real.gif">
                                     <div class="img-box-overlay">
-                                        <div class="img-box-overlay-title">Static Webpage: <br> Wedding Planning Business</div>
-                                        <button class="see-more" onclick="window.location.href='https://dartmouth-cs52-20x.github.io/lab1-landingpage-jordantsanz/';">See more</button>
+                                        <div class="img-box-overlay-title">Webpage: <br> Wedding Planning Business</div>
+
                                     </div>
                                 </div>
                             </li>
@@ -211,7 +218,7 @@
                                     <img class="img-box" src="images/qsslab.JPG">
                                     <div class="img-box-overlay">
                                         <div class="img-box-overlay-title">Racist Terminology in the U.S.</div>
-                                        <button class="see-more" onclick="window.location.href='https://github.com/jordantsanz/COVID-19-Data-Visualizations';">See more</button>
+                                      
                                     </div>
                                 </div>
                             </li>
@@ -220,11 +227,16 @@
                                     <img class="img-box" src=>
                                     <div class="img-box-overlay">
                                         <div class="img-box-overlay-title">Quiz Website</div>
-                                        <button class="see-more" onclick="window.location.href='https://dartmouth-cs52-20x.github.io/lab2-quizzical-jordantsanz/';">See more</button>
                                     </div>
                                 </div>
                             </li>
                         </ul>
+                        <div onclick=scrollOffClickContact() class="arrow-flexbox" id="contactme">
+                            <div class="experience-arrow">
+                                Get in touch!
+                            </div>
+                            <i class="arrow-down"></i>
+                        </div>
                 </div>
           
             </div>
@@ -237,17 +249,17 @@
                     </h1>
                     <div class="top-contact-container">
                         <div class="contact-container" id="email">
-                            <a href="#" class="contact-link">
+                            <a href="mailto:jordan.t.sanz.22@dartmouth.edu" class="contact-link">
                                 <img class="social" id="email" src="images/mail.png">
                             </a>
                         </div>
                         <div class="contact-container" id="github">
-                            <a href="#" class="contact-link">
+                            <a href="https://github.com/jordantsanz" class="contact-link">
                                 <img class="social" id="linkedin-image" src="images/github.png" >
                             </a>
                         </div>
                         <div class="contact-container" id="linkedin">
-                            <a href="#" class="contact-link">
+                            <a href="https://www.linkedin.com/in/jordansanz/" class="contact-link">
                                 <img class="social" id="linkedin-image" src="images/linkedin.png" >
                             </a>
                         </div>
