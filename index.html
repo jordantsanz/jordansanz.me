@@ -2,89 +2,73 @@
 <html>
     <head>
         <title>jordansanz.me</title>
-        <link href="css.css" rel="stylesheet" type="text/css">
+        <link href="style.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Monoton&family=Permanent+Marker&family=Roboto+Mono&display=swap" rel="stylesheet">
         
     </head>
     <body>
         <!---Hey, what are you doing looking here?!? -->
         <!---Well, since you're here, nice to meet you. Hope you enjoy!-->
-        <header>
-            <nav class="navbar">
-                <ul class="navbar-container">
-                    <div class="title-container-logo">
+        <section class="title-page">
+            <div id="video-background">
+                <video autoplay muted loop>
+                    <source src="images/stars.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="title-page-container">
+                <nav class="navbar">
+                    <ul class="navbar-container">
                         <li class="navbar-item" id="logo-container">
                             <div class="navbar-text" id="logo"> Jordan Sanz </div>
                         </li>
-                    </div>
-                    <div class="other-navbar">
-                        <li class="navbar-item">
-                            <div class="navbar-text"> About </div>
-                        </li>
-                        <li class="navbar-item">
-                            <div class="navbar-text">Experience</div>
-                        </li>
-                        <li class="navbar-item">
-                            <div class="navbar-text">Portfolio</div>
-                        </li>
-                        <li class="navbar-item">
-                            <div class="navbar-text">Contact</div>
-                        </li>
-                        <li class="icons">
-                            <div class="icon-container">
-                                <i class="icon" id="email-icon"></i>
-                                <i class="icon" id="linkedin-icon"></i>
-                                <i class="icon" id="github-icon"></i>
-                                <i class="icon" id="facebook-icon"></i>
+                        <div class="other-navbar">
+                            <li class="navbar-item">
+                                <div class="navbar-text" onclick=scrollOffClickExperience()>Experience</div>
+                            </li>
+                            <li class="navbar-item">
+                                <div class="navbar-text" onclick=scrollOffClickPortfolio()>Portfolio</div>
+                            </li>
+                            <li class="navbar-item">
+                                <div class="navbar-text" onclick=scrollOffClickContact()>Contact Me</div>
+                            </li>
+                            <li class="icons">
+                                <div class="icon-container">
+                                    <i class="icon" id="email-icon"></i>
+                                    <i class="icon" id="linkedin-icon"></i>
+                                    <i class="icon" id="github-icon"></i>
+                                    <i class="icon" id="facebook-icon"></i>
+                                </div>
+                            </li>
+                        </div>
+                    </ul>
+                </nav>
+                <div class="title-page-items-flexbox">
+                    <div class="title-page-flexbox">
+                        <div class="title-page-text-container">
+                            <div class="main-title">Hi! I'm Jordan.</div>
+                            <div class="difference"> Let's make a </div>
+                            <div class="difference"> difference.</div>
+                            <div class="about-stuff">
+                                I'm a Dartmouth junior studying
+                                Computer Science and Quantitative Social Science.
+                                I enjoy using data visualization, 
+                                web development, and programming to
+                                create products that are meaningful and tell a story.
+                                My dream is to create something that will
+                                    change the future of the world as we know it. 
                             </div>
-                        </li>
+                        </div>
+                        <div class="self-image-container">
+                            <img src="images/attempt.png" id="self-image-tag"> 
+                        </div>
                     </div>
-                </ul>
-            </nav>
-        </header>
-        <video src="images/stars.mp4" autoplay muted loop></video>
-        <section class="title-page">
-            <div class="title-page-container">
-                <div class="picture" id="title-picture"></div>
-                <div class="title-pate-text-container">
-                    <h1 class="main-title">Hi! I'm <span class="jordan">Jordan</span>.</h1>
-                    <h2 class="subtitle">Let's make a <span class="difference">difference.</span></h2>
-                </div>
-            </div>
-        </section>
-
-        <section class="about">
-            <div class="about-cover">
-                <div class="title-container" id="about">
-                    <h1 class="title" id="about-title">
-                        About
-                    </h1>
-                </div>
-                <ul class="about-list">
-                    <li class="about-item-container" id=a1>
-                        <h2 class="about-subtitle" id="as1">Making</h2>
-                            <div class="about-text" id="texas">
-                                    From Midland, Texas,
-                                    I'm a Dartmouth College '22 studying
-                                    Computer Science and Quantitative Social Science.<br> <br>
-                            </div>  
-                    </li>
-                    <li class="about-item-container" id="a2">
-                        <h2 class="about-subtitle" id="as2">Meaningful</h2>
-                        <div class="about-text" id="comp">
-                            I enjoy using data visualization, <br>
-                            web development, and programming to <br>
-                            create products that are meaningful and tell a story. <br><br>
+                    <div onclick=scrollOffClickExperience() class="arrow-flexbox">
+                        <div class="experience-arrow">
+                            Experience
                         </div>
-                    </li>
-                    <li class="about-item-container" id="as3">
-                        <h2 class="about-subtitle" id="as3">Solutions</h2>
-                        <div class="about-text" id="world">
-                            My dream is to create something that will
-                            change the future of the world as we know it--for better. <br> <br>
-                        </div>
-                    </li>
-                </ul>
+                        <i class="arrow-down"></i>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="experience">
@@ -93,81 +77,91 @@
                     <h1 class="title" id="experience-title">Experience</h1>
                 </div>
                 <div class="experience-list-container">
-                    <ul class="experience-list">
-
-
+                    <div class="left-list">
+                        <div class="list-title">Languages: </div>
+                        <ul class="list-of-languages">
                         <li class="experience-item" id="java">
-                            Java
-                        </li>
-
-                        <li class="experience-item" id="khayal">
-                            Data Analysis
-                            Research Assistant
-                        </li>
-
-                        <li class="experience-item" id="tutor">
-                            Computer Science Peer Tutor
+                            - Java
                         </li>
                         <li class="experience-item" id="python">
-                            Python
+                            - Python
                         </li>
                         <li class="experience-item" id="css">
-                            JavaScript  
+                            - JavaScript  
                         </li>
                         <li class="experience-item" id="javascript">
-                            HTML/CSS
+                            - HTML/CSS
                         </li>
                         <li class="experience-item" id="r">
-                            R
+                            - R
                         </li>
-   
-                        <li class="experience-item" id="dodecs">
-                            Dartmouth Dodecaphonics A Cappella
-                        </li>
-
-                        <li class="experience-item" id="signu">
-                            Sigma Nu Fraternity
-                        </li>
-                        <li class="experience-item" id="uga">
-                            Undergraduate Advisor
-                        </li>
-
- 
-
-
-
-                        <li class="experience-item" id="kalish">
-                            Data Visualization 
-                            Research Assistant
-                        </li>
-                        
                         <li class="experience-item" id="C">
-                            C
-                        </li>
-                        <li class="experience-item" id="sa">
-                            Student Assembly House Senator
-                        </li>
-
-                        <li class="experience-item" id="datavis">
-                            QSS 017: Data Visualization
+                            - C
                         </li>
                         <li class="experience-item" id="SQL">
-                            SQL
+                            - SQL
                         </li>
-                        <li class="experience-item" id="rwit">
-                            Dartmouth Writing Center
-                        </li>
-                        <li class="experience-item" id="ta">
-                            COSC Teaching Assistant
-                        </li>
-                        <li class="experience-item" id="webdev">
-                            COSC 052: Full-Stack Web Development
-                        </li>
-                    </ul> 
-                    <button class="resume" onclick="window.location.href='images/resume.pdf'">See more!</button>
+                        </ul>
+                        <div class="list-title">Coursework:</div>
+                        <ul class="list-of-courses">
+                            <li class="experience-item" id="datavis">
+                                - Data Visualization
+                            </li>
+                            <li class="experience-item" id="webdev">
+                                - Full-Stack Web Development
+                            </li>
+                            <li class="experience-item" id="software">
+                                - Software Development and Implementation
+                            </li>
+                            <li class="experience-item" id="math">
+                                - Discrete Mathematics in Computer Science
+                            </li>
+                            <li class="experience-item" id="oop">
+                                - Object-Oriented Programming
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right-list">
+                        <div class="list-title">Activities:</div>
+                        <ul class="right-list-list">
+                            <li class="aexperience-item" id="khayal">
+                                - Data Analysis
+                                Research Assistant
+                            </li>
+                            <li class="aexperience-item" id="tutor">
+                                - Computer Science Teaching Assistant
+                            </li>
+                        
+                            <li class="aexperience-item" id="dodecs">
+                                - Dartmouth Dodecaphonics A Cappella
+                            </li>
+
+                            <li class="aexperience-item" id="signu">
+                                - Sigma Nu Fraternity
+                            </li>
+                            <li class="aexperience-item" id="uga">
+                                - Undergraduate Advisor (Resident Advisor)
+                            </li>
+                            <li class="aexperience-item" id="kalish">
+                                - Data Visualization 
+                                Research Assistant
+                            </li>
+                            <li class="aexperience-item" id="sa">
+                                - Student Assembly House Senator
+                            </li>
+                            <li class="aexperience-item" id="rwit">
+                                - Dartmouth Writing Center
+                            </li>
+                        </ul>
+                        <div onclick=scrollOffClickPortfolio() class="arrow-flexbox" id="portfolio">
+                            <div class="experience-arrow">
+                                Portfolio
+                            </div>
+                            <i class="arrow-down"></i>
                         </div>
                     </div>
                 </div>
+  
             </div>
         </section>
         <section class="portfolio">
@@ -177,15 +171,6 @@
                     <h2 class="portfolio-subtitle">Here's some stuff I've been working on:</h2>
                     <div class="carosel">
                         <ul id="carosel-container">
-                            <li id="carosel-cell-1">
-                                <div class="carosel-box">
-                                    <img class="img-box" src="images/coverpage-real.gif">
-                                    <div class="img-box-overlay">
-                                        <div class="img-box-overlay-title">Static Webpage: <br> Wedding Planning Business</div>
-                                        <button class="see-more" onclick="window.location.href='https://dartmouth-cs52-20x.github.io/lab1-landingpage-jordantsanz/';">See more</button>
-                                    </div>
-                                </div>
-                            </li>
                             <li id="carosel-cell-2">
                                 <div class="carosel-box">
                                     <img class="img-box" src="images/RankedConfirmedCasesByCountryFinal.gif">
@@ -201,6 +186,15 @@
                                     <div class="img-box-overlay">
                                         <div class="img-box-overlay-title">Dynamic Map of COVID-19</div>
                                         <button class="see-more"  onclick="window.location.href='https://github.com/jordantsanz/COVID-19-Data-Visualizations';">See more</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="carosel-cell-1">
+                                <div class="carosel-box">
+                                    <img class="img-box" src="images/coverpage-real.gif">
+                                    <div class="img-box-overlay">
+                                        <div class="img-box-overlay-title">Static Webpage: <br> Wedding Planning Business</div>
+                                        <button class="see-more" onclick="window.location.href='https://dartmouth-cs52-20x.github.io/lab1-landingpage-jordantsanz/';">See more</button>
                                     </div>
                                 </div>
                             </li>
@@ -239,12 +233,17 @@
             <div class="contact-cover">
                 <div class="contact-container-main">
                     <h1 class="title" id="contact">
-                        Contact
+                        Contact Me
                     </h1>
                     <div class="top-contact-container">
                         <div class="contact-container" id="email">
                             <a href="#" class="contact-link">
-                                <img class="social" id="email" src="images/gmail2.png">
+                                <img class="social" id="email" src="images/mail.png">
+                            </a>
+                        </div>
+                        <div class="contact-container" id="github">
+                            <a href="#" class="contact-link">
+                                <img class="social" id="linkedin-image" src="images/github.png" >
                             </a>
                         </div>
                         <div class="contact-container" id="linkedin">
@@ -253,25 +252,12 @@
                             </a>
                         </div>
                     </div>
-                    <div class="bottom-contact-container">
-                        <div class="contact-container" id="instagram">
-                            <a href="#" class="contact-link">
-                                <img class="social" id="ig" src="images/instagram.png">
-                            </a>
-                        </div>
-                        <div class="contact-container" id="github">
-                            <a href="#" class="contact-link">
-                                <img class="social" id="github" src="images/githubwhite.png">
-                            </a>
-                        </div>
-                        <div class="contact-container" id="facebook">
-                            <a href="#" class="contact-link">
-                                <img class="social" id="fb" src="images/facebook.png">
-                            </a>
-                        </div>
+                    <div class="hire-me-pls">
+                        I'm currently seeking positions for Fall 2020. <br>
+                         Let's chat!
                     </div>
                     <div class="footer-container">
-                        <button onclick="topFunction()" class="button" id="go-up">^</button>
+                        <button onclick="topFunction()" class="button" id="go-up">Back up</button>
                         <div class="footer-text">&copy; Jordan Sanz 2020</div>
                     </div>
                 </div>
