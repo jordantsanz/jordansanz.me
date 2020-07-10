@@ -521,9 +521,6 @@ video{
     align-items: center;
     height: 360px;
 }
-#carosel-container::-webkit-scrollbar{
-    display: none;
-}
 
 
 .carosel-box{
