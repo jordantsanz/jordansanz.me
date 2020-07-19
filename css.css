@@ -169,7 +169,7 @@ video{
     display: inline-block;
     padding: 4px;
     transform: rotate(45deg);
-    margin-top: 20px;
+    margin-top: 50px;
     position: absolute;
     cursor: pointer;
     transition: 200ms;
