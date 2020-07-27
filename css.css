@@ -51,6 +51,7 @@ nav{
 ul{
     list-style-type: none;
     height: 222px;
+    margin-bottom: 35px;
 }
 
 ul.navbar-container{
@@ -286,7 +287,6 @@ video{
 
 #khayal:hover{
     color: #fade0f;
- 
 }
 
 #kalish:hover{
@@ -327,8 +327,10 @@ video{
 #signu:hover{
     color: #fade0f;
 
-
 } 
+#react:hover, #css:hover{
+    color: #fade0f;
+}
 #sa:hover{
     color: #fade0f;
 

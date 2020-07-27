@@ -53,6 +53,7 @@ nav{
 ul{
     list-style-type: none;
     height: 222px;
+    margin-bottom: 35px;
 }
 
 ul.navbar-container{
@@ -289,6 +290,12 @@ video{
 #khayal:hover{
     color: #fade0f;
  
+}
+#css:hover{
+    color: #fade0f;
+}
+#react:hover{
+    color: #fade0f;
 }
 
 #kalish:hover{
