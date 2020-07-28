@@ -25,13 +25,7 @@ nav{
 }
 .navbar-text{
     color: #051c2c;
-    transition: font-size 300ms, color 400ms, font-weight 300ms;
-}
-
-.navbar-text:hover{
-    color: #fade0f;
-    font-weight: bolder;
-    cursor: pointer;
+    transition: 300ms color ease, 300ms font-weight ease;
 }
 
 .self-image-container{
@@ -64,6 +58,23 @@ ul.navbar-container{
     height: 100%;
     margin: 0px;
     padding: 0px;
+    transition: 300ms all ease;
+
+}
+
+ul.navbar-container:hover{
+    background-color: black;
+}
+
+ul.navbar-container:hover .navbar-text{
+    color: white;
+    transition: 300ms ease all;
+}
+
+ul.navbar-container:hover .navbar-text:hover{
+    color: #fade0f;
+    font-weight: bolder;
+    cursor: pointer;
 
 }
 
