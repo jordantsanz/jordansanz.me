@@ -23,7 +23,7 @@ function scrollOffClickExperience(){
   })
 }
 function scrollOffClickPortfolio(){
-  document.querySelector('.portfolio-container').scrollIntoView({ 
+  document.querySelector('.portfolio-subtitle').scrollIntoView({ 
     behavior: 'smooth' 
   })
 }
