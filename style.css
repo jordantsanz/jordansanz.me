@@ -81,7 +81,7 @@ ul.navbar-container:hover .navbar-text:hover{
 .other-navbar{
     flex-direction: row;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 65%;
     margin: 0px;
 }
@@ -751,11 +751,14 @@ video{
     margin-bottom: 2vh;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1189px){
     .title-page-flexbox{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    ul.navbar-container{
+        justify-content: space-around;
     }
     .title-page-container{
         height: fit-content;
@@ -847,4 +850,70 @@ ul{
     
 
 
+}
+
+@media only screen and (max-width: 570px){
+    ul{
+        height: auto;
+    }
+    #self-image-tag{
+        width: 330px;
+    }
+    .experience-item{
+        height: auto;
+    }
+    .aexperience-item{
+        height: auto;
+    }
+    .top-contact-container{
+        flex-direction: column;
+    }
+    .other-navbar{
+        
+    }
+    .main-title, .difference{
+        font-size: 35px;
+    }
+    ul.navbar-container{
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 10px;
+    }
+    #logo{
+        margin-left: 0px;
+    }
+    .other-navbar{
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    nav{
+        height: auto;
+    }
+
+    .main-title{
+        line-height: 80px;
+        height: auto;
+        margin-top: 20px;
+    }
+    .difference{
+        line-height: 80px;
+        height: auto;
+    }
+
+}
+
+@media only screen and (max-width: 280px){
+    #self-image-tag{
+        width: 250px;
+    }
+    .list-title{
+        width: 220px;
+    }
+    .navbar-text{
+        font-size: 10px;
+    }
+    .title{
+        font-size: 38px;
+    }
 }
