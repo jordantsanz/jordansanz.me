@@ -1,4 +1,4 @@
-# DALI Challenge - Personal Website
+# Personal Website
 
 <a href="http://jordansanz.me">jordansanz.me<a/>
 
