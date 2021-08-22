@@ -607,6 +607,8 @@ video{
     align-items: center;
     transition: all 150ms;
     border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .carosel-box:hover .img-box-overlay{
     height: 90px;
@@ -617,6 +619,7 @@ video{
     color: #051c2c;
     align-items: center;
     font-size: 20px;
+    text-align: center;
 }
 
 .see-more{
