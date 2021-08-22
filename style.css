@@ -46,7 +46,7 @@ nav{
 
 ul{
     list-style-type: none;
-    height: 222px;
+    height: 100%;
     margin-bottom: 35px;
 }
 
@@ -279,6 +279,7 @@ video{
     background-color: rgba(5, 28, 44);
     transition: all 2.5s;
     height: 145vh;
+    padding-top: 20px;
 
 }
 
@@ -503,10 +504,6 @@ video{
 
 .experience-hover-here{
     color: #fade0fce;
-}
-
-#portfolio{
-    margin-top: 130px;
 }
 
 .portfolio-container:hover{
@@ -738,24 +735,46 @@ video{
 }
 
 .hire-me-pls{
-    color: #fade0f;
-    font-size: 15px;
+    color: white;
+    font-size: 20px;
     text-align: center;
     margin-top: 35px;
     margin-bottom: 20px;
-
+    transition: 200ms ease;
 }
+
+.hire-me-pls:hover{
+    color: #fae967;
+}
+
+.yellow{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
 
 .footer-text{
     font-size: 10px;
     margin-bottom: 2vh;
 }
 
+ul.height-100{
+    height: 100%;
+}
+
+#go-up{
+    font-size: 15px;
+    color: black !important;
+}
 @media only screen and (max-width: 1189px){
     .title-page-flexbox{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    ul.height-100{
+        height: 100%;
     }
     ul.navbar-container{
         justify-content: space-around;
